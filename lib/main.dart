@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'bmi.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,7 +28,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       tabBuilder: (BuildContext context, int i) {
-        return Container();
+        return Bmi();
       },
     );
   }
