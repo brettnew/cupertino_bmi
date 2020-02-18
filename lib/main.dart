@@ -1,3 +1,4 @@
+import 'package:cupertino_bmi/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'bmi.dart';
@@ -28,7 +29,11 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       tabBuilder: (BuildContext context, int i) {
-        return Bmi();
+        if (i == 0) {
+          return Bmi();
+        } else {
+          return Settings();
+        }
       },
     );
   }
